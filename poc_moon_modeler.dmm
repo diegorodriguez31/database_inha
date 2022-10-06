@@ -1,0 +1,1091 @@
+{
+	"tables": {
+		"cf417c21-db40-44e0-8878-c759b0ae98d0": {
+			"id": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"visible": true,
+			"name": "Employee",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed",
+					"name": "ssn",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "9babbc39-5970-4ff5-92cd-9020f702b9b5",
+					"name": "superssn",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Employee"
+				},
+				{
+					"id": "64564857-f811-4697-b5b7-9c19d6d3fa57",
+					"name": "fname",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "0b6f95ea-4956-41c1-8fa1-f73cb2e445b9",
+					"name": "minit",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "486857d6-21ee-4381-9148-2a10d6a77e11",
+					"name": "lname",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "2b88eab1-c103-42c0-9aef-035bfb4ceb02",
+					"name": "address",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "66ebb0de-4a82-434f-8ff0-ab3c93b8e434",
+					"name": "bdate",
+					"datatype": "DATE",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "01784c60-fbe3-48b4-9dfb-25746d276950",
+					"name": "salary",
+					"datatype": "FLOAT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "7f8f59d4-1a88-4cc5-b569-1b1e553bced4",
+					"name": "sex",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "3374bf4a-4c9a-429d-bc8d-4b0b42ca8ece",
+					"name": "dnumber",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Department"
+				}
+			],
+			"relations": [
+				"98f38bd8-964c-46fd-a88c-00ccd1957e4e",
+				"8be5aa8f-3ee0-42c7-8b6e-5f4be41e09bf",
+				"251d1856-ca77-460a-94fa-1d36dcf68316",
+				"ed929a21-f5d2-4dc3-a609-e6c4b11ba0d5",
+				"5581649f-911f-4d6c-90b1-1a79e7237268"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "a02200a3-038b-4c6f-a689-6b549e185549",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "e7066a08-385e-450f-a38d-bb673bbd0adb",
+							"colid": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"a0cc7e30-2dd1-436f-877e-dfea3c30eaa0": {
+			"id": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+			"visible": true,
+			"name": "Department",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "24eecc87-fd46-444f-9e1f-f99aebcceec6",
+					"name": "dnumber",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "5aa2b989-6776-4b6b-ba11-4460117ef62b",
+					"name": "dname",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "6758a89c-05c4-4bce-8ec3-4c8c43d087ce",
+					"name": "mgrssn",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Employee"
+				}
+			],
+			"relations": [
+				"8be5aa8f-3ee0-42c7-8b6e-5f4be41e09bf",
+				"66c095b3-6ee6-4904-a08e-b337b98162ec",
+				"8481ff86-4e8d-4e28-bddb-1227554d3266",
+				"5581649f-911f-4d6c-90b1-1a79e7237268"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2b40fb4c-5e61-4ce5-9b49-61209c82cd0d",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "311639f2-d5ba-4985-8c3f-81f4935368a6",
+							"colid": "24eecc87-fd46-444f-9e1f-f99aebcceec6"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"3f0482c4-d484-4a23-b323-abd2c15a4a5f": {
+			"id": "3f0482c4-d484-4a23-b323-abd2c15a4a5f",
+			"visible": true,
+			"name": "Location",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "1e3b6faa-de24-4d46-bf0d-4d622f2f9923",
+					"name": "dlocation",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				}
+			],
+			"relations": [
+				"8210bfc4-63e6-4da4-a927-3ad23ef7a57c"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d6b9d17a-a55a-4b9b-be67-c26784f84b64",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "6086f17d-170d-4c35-a046-49cf44957565",
+							"colid": "1e3b6faa-de24-4d46-bf0d-4d622f2f9923"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"5b46b7c2-c66e-48fb-a1be-bed0932dddba": {
+			"id": "5b46b7c2-c66e-48fb-a1be-bed0932dddba",
+			"visible": true,
+			"name": "DepartmentLocations",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d05ffeb0-dd5f-4231-afd4-518ea3a2771d",
+					"name": "dnumber",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Department"
+				},
+				{
+					"id": "634b0a75-60b7-4f4e-9169-e982261f22b7",
+					"name": "dlocation",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Location"
+				}
+			],
+			"relations": [
+				"66c095b3-6ee6-4904-a08e-b337b98162ec",
+				"8210bfc4-63e6-4da4-a927-3ad23ef7a57c"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "3dacbd80-bfad-46d6-b469-4d10df8af461",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"2e74f752-418f-4492-843c-daa91bb12db0": {
+			"id": "2e74f752-418f-4492-843c-daa91bb12db0",
+			"visible": true,
+			"name": "Project",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "5e05c4be-86b4-4511-ada2-da92a7d48338",
+					"name": "pnumber",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "35e6a162-d4a8-469a-aa39-7c8636292eca",
+					"name": "pname",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "e121055e-2b18-49a9-a6b1-2bda4d69a6d2",
+					"name": "plocation",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "49680f61-82c2-4b4a-838b-c43593c3e58f",
+					"name": "dnum",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Department"
+				}
+			],
+			"relations": [
+				"8481ff86-4e8d-4e28-bddb-1227554d3266",
+				"a41662fe-0a01-48cc-9c6a-86bff448cc6a"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d457bae0-b22d-4b20-8e71-50079d11b796",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "e3581acc-00bb-43b6-8454-543d2fc63c68",
+							"colid": "5e05c4be-86b4-4511-ada2-da92a7d48338"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"38d25b87-26e6-491c-bec8-d0c5de990636": {
+			"id": "38d25b87-26e6-491c-bec8-d0c5de990636",
+			"visible": true,
+			"name": "Dependent",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "831ff56a-89f2-47f2-bcf1-4e9e932a9c5a",
+					"name": "dependentname",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "d4b528eb-d742-4bed-977b-88050170a49c",
+					"name": "essn",
+					"datatype": "INT",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Employee"
+				},
+				{
+					"id": "b44ed54d-95e0-43fd-9dcf-82c9d7277ce1",
+					"name": "sex",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "eaecba6f-2fb3-40e9-bf57-e5c897b8dee1",
+					"name": "bdate",
+					"datatype": "DATE",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				},
+				{
+					"id": "99d5fd0c-ae3f-4e76-8090-ad76afd1bea0",
+					"name": "relationship",
+					"datatype": "VARCHAR",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				}
+			],
+			"relations": [
+				"98f38bd8-964c-46fd-a88c-00ccd1957e4e"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "161258c3-e7cd-44a7-8949-cb13ae6680ae",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "bef2fe1b-bf6f-4376-832d-adc766c6dac2",
+							"colid": "831ff56a-89f2-47f2-bcf1-4e9e932a9c5a"
+						},
+						{
+							"id": "387c3457-4251-4f37-89b2-cf86151da51b",
+							"colid": "d4b528eb-d742-4bed-977b-88050170a49c"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		},
+		"46f59894-33b0-450d-a168-1b464b624697": {
+			"id": "46f59894-33b0-450d-a168-1b464b624697",
+			"visible": true,
+			"name": "EmployeeProject",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "e78c9b76-34a0-4c7d-ac78-774f32101a3c",
+					"name": "ssn",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Employee"
+				},
+				{
+					"id": "7adad0a0-76d8-4f5f-9ceb-d9a2b58b976e",
+					"name": "pnumber",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Project"
+				},
+				{
+					"id": "f1b54372-4bb2-4423-9d5c-3a61c3bf543d",
+					"name": "hours",
+					"datatype": "INT",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"autoinc": false,
+					"collation": null,
+					"charset": null,
+					"binary": false,
+					"zerofill": false,
+					"unsigned": false,
+					"enum": "",
+					"after": ""
+				}
+			],
+			"relations": [
+				"a41662fe-0a01-48cc-9c6a-86bff448cc6a",
+				"ed929a21-f5d2-4dc3-a609-e6c4b11ba0d5"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "20aa10c3-e851-46a8-b06f-fd5b7c0a5a7a",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				},
+				{
+					"id": "c7effed1-b391-4aa5-9ee9-c3bcfd045943",
+					"isPk": false,
+					"using": "na",
+					"name": "Foreign key",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"tabletype": "na",
+			"collation": "",
+			"charset": "",
+			"rowformat": "na"
+		}
+	},
+	"relations": {
+		"98f38bd8-964c-46fd-a88c-00ccd1957e4e": {
+			"id": "98f38bd8-964c-46fd-a88c-00ccd1957e4e",
+			"visible": true,
+			"name": "Employee_Dependent",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "a02200a3-038b-4c6f-a689-6b549e185549",
+			"parent": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"child": "38d25b87-26e6-491c-bec8-d0c5de990636",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "5d9af703-1f1e-48f2-9ef5-4d0c63c8133c",
+					"parentcol": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed",
+					"childcol": "d4b528eb-d742-4bed-977b-88050170a49c"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8be5aa8f-3ee0-42c7-8b6e-5f4be41e09bf": {
+			"id": "8be5aa8f-3ee0-42c7-8b6e-5f4be41e09bf",
+			"visible": true,
+			"name": "Supervisor_Department",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "a02200a3-038b-4c6f-a689-6b549e185549",
+			"parent": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"child": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "df2e97d8-9888-47ef-a3f5-5bede30518a5",
+					"parentcol": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed",
+					"childcol": "6758a89c-05c4-4bce-8ec3-4c8c43d087ce"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"66c095b3-6ee6-4904-a08e-b337b98162ec": {
+			"id": "66c095b3-6ee6-4904-a08e-b337b98162ec",
+			"visible": true,
+			"name": "Department_DepartmentLocations",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2b40fb4c-5e61-4ce5-9b49-61209c82cd0d",
+			"parent": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+			"child": "5b46b7c2-c66e-48fb-a1be-bed0932dddba",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "118fd900-e643-4509-9df0-d1943302a20c",
+					"parentcol": "24eecc87-fd46-444f-9e1f-f99aebcceec6",
+					"childcol": "d05ffeb0-dd5f-4231-afd4-518ea3a2771d"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8210bfc4-63e6-4da4-a927-3ad23ef7a57c": {
+			"id": "8210bfc4-63e6-4da4-a927-3ad23ef7a57c",
+			"visible": true,
+			"name": "Location_DepartmentLocations",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d6b9d17a-a55a-4b9b-be67-c26784f84b64",
+			"parent": "3f0482c4-d484-4a23-b323-abd2c15a4a5f",
+			"child": "5b46b7c2-c66e-48fb-a1be-bed0932dddba",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "05363222-8cdb-47c4-8f39-62e3ed6809e3",
+					"parentcol": "1e3b6faa-de24-4d46-bf0d-4d622f2f9923",
+					"childcol": "634b0a75-60b7-4f4e-9169-e982261f22b7"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8481ff86-4e8d-4e28-bddb-1227554d3266": {
+			"id": "8481ff86-4e8d-4e28-bddb-1227554d3266",
+			"visible": true,
+			"name": "Department_Project",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2b40fb4c-5e61-4ce5-9b49-61209c82cd0d",
+			"parent": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+			"child": "2e74f752-418f-4492-843c-daa91bb12db0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "2f3cc666-066d-4716-be4e-ce14046cddaf",
+					"parentcol": "24eecc87-fd46-444f-9e1f-f99aebcceec6",
+					"childcol": "49680f61-82c2-4b4a-838b-c43593c3e58f"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"a41662fe-0a01-48cc-9c6a-86bff448cc6a": {
+			"id": "a41662fe-0a01-48cc-9c6a-86bff448cc6a",
+			"visible": true,
+			"name": "Project_EmployeeProject",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d457bae0-b22d-4b20-8e71-50079d11b796",
+			"parent": "2e74f752-418f-4492-843c-daa91bb12db0",
+			"child": "46f59894-33b0-450d-a168-1b464b624697",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "many",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "235983a7-f8c2-4b82-91ca-ba1d8d9dbdbd",
+					"parentcol": "5e05c4be-86b4-4511-ada2-da92a7d48338",
+					"childcol": "7adad0a0-76d8-4f5f-9ceb-d9a2b58b976e"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"251d1856-ca77-460a-94fa-1d36dcf68316": {
+			"id": "251d1856-ca77-460a-94fa-1d36dcf68316",
+			"visible": true,
+			"name": "Employee_Employee",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "a02200a3-038b-4c6f-a689-6b549e185549",
+			"parent": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"child": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "0896bb3d-f076-40b9-b4b3-ccaa73d7390a",
+					"parentcol": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed",
+					"childcol": "9babbc39-5970-4ff5-92cd-9020f702b9b5"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"ed929a21-f5d2-4dc3-a609-e6c4b11ba0d5": {
+			"id": "ed929a21-f5d2-4dc3-a609-e6c4b11ba0d5",
+			"visible": true,
+			"name": "Employee_EmployeeProject",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "a02200a3-038b-4c6f-a689-6b549e185549",
+			"parent": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"child": "46f59894-33b0-450d-a168-1b464b624697",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "many",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "617c2843-dc6c-44f1-b986-4e22181bc4f8",
+					"parentcol": "81dc51ec-f22e-4b58-9adc-eb6c5e7de2ed",
+					"childcol": "e78c9b76-34a0-4c7d-ac78-774f32101a3c"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"5581649f-911f-4d6c-90b1-1a79e7237268": {
+			"id": "5581649f-911f-4d6c-90b1-1a79e7237268",
+			"visible": true,
+			"name": "Department_Employee",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2b40fb4c-5e61-4ce5-9b49-61209c82cd0d",
+			"parent": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+			"child": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "e5329494-70c4-4290-8ee6-70cb746c1a49",
+					"parentcol": "24eecc87-fd46-444f-9e1f-f99aebcceec6",
+					"childcol": "3374bf4a-4c9a-429d-bc8d-4b0b42ca8ece"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "Company",
+		"id": "0810bbbf-a8a5-4f2d-91f0-c80e1e9c14df",
+		"activeDiagram": "15ce95d8-361c-40d9-bc9a-c5f2fdda605e",
+		"desc": "Test for database lab session",
+		"path": "",
+		"type": "MYSQL",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 4,
+			"minor": 6,
+			"extra": 6
+		},
+		"embeddedInParentsIsDisplayed": true,
+		"schemaContainerIsDisplayed": false,
+		"cardinalityIsDisplayed": false,
+		"estimatedSizeIsDisplayed": false,
+		"writeFileParam": false,
+		"def_tabletype": "na",
+		"def_collation": "",
+		"def_charset": "",
+		"def_coltopk": true,
+		"def_rowformat": "na",
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": "//",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"includeSchema": "always",
+			"quotation": "if_needed"
+		},
+		"lastSaved": "Wed Oct 05 2022 18:43:30 GMT+0900 (heure normale de la Corée)"
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"15ce95d8-361c-40d9-bc9a-c5f2fdda605e": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "15ce95d8-361c-40d9-bc9a-c5f2fdda605e",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"cf417c21-db40-44e0-8878-c759b0ae98d0": {
+					"referencedItemId": "cf417c21-db40-44e0-8878-c759b0ae98d0",
+					"x": 52,
+					"y": 39,
+					"gHeight": 207,
+					"gWidth": 198,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"a0cc7e30-2dd1-436f-877e-dfea3c30eaa0": {
+					"referencedItemId": "a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+					"x": 454,
+					"y": 82,
+					"gHeight": 81,
+					"gWidth": 193,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"3f0482c4-d484-4a23-b323-abd2c15a4a5f": {
+					"referencedItemId": "3f0482c4-d484-4a23-b323-abd2c15a4a5f",
+					"x": 751,
+					"y": 124,
+					"gHeight": 45,
+					"gWidth": 174,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"5b46b7c2-c66e-48fb-a1be-bed0932dddba": {
+					"referencedItemId": "5b46b7c2-c66e-48fb-a1be-bed0932dddba",
+					"x": 790,
+					"y": 232,
+					"gHeight": 63,
+					"gWidth": 196,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"2e74f752-418f-4492-843c-daa91bb12db0": {
+					"referencedItemId": "2e74f752-418f-4492-843c-daa91bb12db0",
+					"x": 420,
+					"y": 307,
+					"gHeight": 99,
+					"gWidth": 206,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"38d25b87-26e6-491c-bec8-d0c5de990636": {
+					"referencedItemId": "38d25b87-26e6-491c-bec8-d0c5de990636",
+					"x": 49,
+					"y": 370,
+					"gHeight": 117,
+					"gWidth": 220,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"46f59894-33b0-450d-a168-1b464b624697": {
+					"referencedItemId": "46f59894-33b0-450d-a168-1b464b624697",
+					"x": 376,
+					"y": 451,
+					"gHeight": 81,
+					"gWidth": 174,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd"
+		}
+	},
+	"order": [
+		"cf417c21-db40-44e0-8878-c759b0ae98d0",
+		"a0cc7e30-2dd1-436f-877e-dfea3c30eaa0",
+		"3f0482c4-d484-4a23-b323-abd2c15a4a5f",
+		"5b46b7c2-c66e-48fb-a1be-bed0932dddba",
+		"2e74f752-418f-4492-843c-daa91bb12db0",
+		"38d25b87-26e6-491c-bec8-d0c5de990636",
+		"46f59894-33b0-450d-a168-1b464b624697",
+		"98f38bd8-964c-46fd-a88c-00ccd1957e4e",
+		"8be5aa8f-3ee0-42c7-8b6e-5f4be41e09bf",
+		"66c095b3-6ee6-4904-a08e-b337b98162ec",
+		"8210bfc4-63e6-4da4-a927-3ad23ef7a57c",
+		"8481ff86-4e8d-4e28-bddb-1227554d3266",
+		"a41662fe-0a01-48cc-9c6a-86bff448cc6a",
+		"251d1856-ca77-460a-94fa-1d36dcf68316",
+		"ed929a21-f5d2-4dc3-a609-e6c4b11ba0d5",
+		"5581649f-911f-4d6c-90b1-1a79e7237268"
+	],
+	"collapsedTreeItems": []
+}
