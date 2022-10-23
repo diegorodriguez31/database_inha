@@ -1,2 +1,2 @@
-# database_inha
-Code of the database course at Inha University fall semester 2022
+# Database_inha
+You can find the Midterm assignment in the folder "Midterm".
